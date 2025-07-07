@@ -1,3 +1,8 @@
+:root{
+    --button-desing1: #e1b9a6;
+    --button-desing2: #ffff;
+}
+
 body{
     background-color: #ffe4b7;
 }
@@ -31,16 +36,23 @@ fieldset {
 
 /*Todos los productos*/
 .main-products{
-    display: flex; 
-    height: 100px;
-    width: 100px;
+    /*Colores*/
+    background: linear-gradient(
+        var(--button-desing1) 50%,
+        var(--button-desing2)
+    );
+    /*Forma*/
+    width: 200px;        /* Ancho */
+    height: 100px;       /* Alto */
+    border: 2px solid black;     /* Borde negro de 2px */
+    margin: 20px;        /* Separación alrededor del cuadro */
 }
 
 /*Productos por separado*/
 
 /*Producto 1*/
-#P-p-Papaya{
-    position: absolute;
+#P-p-Papaya{ /*Texto he imagen*/
+    /*Orientacion*/
     top: 20%;
 }
 
@@ -49,6 +61,11 @@ fieldset {
     position: absolute;
     left: 20%;
     top: 20%;
+}
+
+#two{
+    top: 40%;
+    left: 20%;
 }
 
 /*Producto 3*/
