@@ -1,0 +1,16 @@
+
+
+
+
+
+#logo1{
+    height: 100px;
+    width: 300px;
+}
+
+#name{
+    position: absolute;
+    left: 40%;
+    top: -50px;
+    font-size: 50px;
+}
