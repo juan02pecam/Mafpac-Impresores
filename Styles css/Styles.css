@@ -1,16 +1,25 @@
 
+body{
+    background-color: #ffe4b7;
+}
 
 
-
+/*nav*/
 
 #logo1{
-    height: 100px;
+    height: 90px;
     width: 300px;
 }
 
 #name{
     position: absolute;
-    left: 40%;
-    top: -50px;
-    font-size: 50px;
+    left: 70%;
+    top: -30px;
+    font-size: 30px;
+}
+
+fieldset {
+    border: none;
+    padding: 2rem 0;
+    border-bottom: 3px solid black;
 }
