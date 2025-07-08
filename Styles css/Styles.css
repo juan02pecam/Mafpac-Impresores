@@ -9,7 +9,10 @@ body{
 
 /*nav*/
 nav{
-    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
 }
 
 /*Posicionamiento del logo*/
@@ -26,6 +29,12 @@ nav{
     font-size: 30px;
 }
 
+.divider {
+    border: none;
+    border-bottom: 3px solid black;
+    margin: 2rem 0;
+}
+
 fieldset {
     border: none;
     padding: 2rem 0;
@@ -38,7 +47,7 @@ fieldset {
 
 main {
     display: grid; /*mostrar los productos como tarjetas en filas/columnas que se adapten automáticamente.*/
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /*Para las filas*/
+    grid-template-columns: repeat(auto-fit, minmax(17%, 1fr)); /*Para las filas*/
     gap: 20px;
     padding: 20px;
     justify-items: center;
@@ -99,6 +108,12 @@ footer{
 
 /*Botton*/
 #sug{
+    background-color: #ffc98d;
     position: absolute;
     left: 48%;
+}
+
+#sug>a{
+    text-decoration: none;
+    color: black;
 }
