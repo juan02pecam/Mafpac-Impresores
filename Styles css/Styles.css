@@ -53,7 +53,7 @@ main {
     justify-items: center;
 }
 
-.main-products{
+.mainProducts{
     /*Colores*/
     background: linear-gradient(
         var(--button-desing1) 50%,
@@ -66,21 +66,57 @@ main {
     margin: 20px;        /* Separación alrededor del cuadro */
 }
 
-.main-products {
+.mainProducts {
     padding: 10px;
     border-radius: 10px;
     transition: transform 0.3s ease;
     box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    cursor: pointer;
 }
 
-.main-products:hover {
+.mainProducts:hover {
     transform: scale(1.05);
 }
+
+img{
+    height: 95px;
+    width: 195px;
+    align-items: center;
+}
+
+p{
+    font-size: 20px;
+}
+
+/*---------------DIV´S---------------------------------------*/
+
+.specs{
+    display: grid; /*mostrar los productos como tarjetas en filas/columnas que se adapten automáticamente.*/
+    grid-template-columns: repeat(auto-fit, minmax(17%, 1fr)); /*Para las filas*/
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+
+    /*---------------------------------*/
+    background-color: white;
+    /*Forma*/
+    width: 200px;        /* Ancho */
+    height: 100px;       /* Alto */
+    border: 2px solid black;     /* Borde negro de 2px */
+    margin: 20px;        /* Separación alrededor del cuadro */
+    text-align: center;
+    display: none;
+}
+
+.specs>p{
+    font-size: 10px;
+}
+
 
 /*Footer*/
 footer{
     text-align: center;
-    
+    font-size: 20px;
 }
 
 #Facebook{
@@ -114,6 +150,7 @@ footer{
 }
 
 #sug>a{
+    font-size: 20px;
     text-decoration: none;
     color: black;
 }
