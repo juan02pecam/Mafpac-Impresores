@@ -108,14 +108,13 @@ p{
     font-size: 10px;
 }
 
-@media (min-width: 1080px) {
-    
+@media(){
+
 }
 
-@media (max-width: 1080px) {
+@media(){
     
 }
-
 
 /*Footer*/
 footer{
