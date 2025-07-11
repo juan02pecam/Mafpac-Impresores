@@ -10,7 +10,9 @@ body{
 /*nav*/
 nav{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /*se utiliza para distribuir elementos dentro de 
+                                    un contenedor flexible (flexbox) de manera que el espacio 
+                                    sobrante se distribuya uniformemente entre ellos*/
     align-items: center;
     padding: 10px 50px;
 }
@@ -46,7 +48,8 @@ fieldset {
 /*Todos los productos*/
 
 main {
-    display: grid; /*mostrar los productos como tarjetas en filas/columnas que se adapten automáticamente.*/
+    display: grid; /*mostrar los productos como tarjetas en filas/columnas que se 
+                    adapten automáticamente.*/
     grid-template-columns: repeat(auto-fit, minmax(17%, 1fr)); /*Para las filas*/
     gap: 20px;
     padding: 20px;
@@ -91,13 +94,6 @@ p{
 /*---------------DIV´S---------------------------------------*/
 
 .specs{
-    display: grid; /*mostrar los productos como tarjetas en filas/columnas que se adapten automáticamente.*/
-    grid-template-columns: repeat(auto-fit, minmax(17%, 1fr)); /*Para las filas*/
-    gap: 20px;
-    padding: 20px;
-    justify-items: center;
-
-    /*---------------------------------*/
     background-color: white;
     /*Forma*/
     width: 200px;        /* Ancho */
@@ -110,6 +106,14 @@ p{
 
 .specs>p{
     font-size: 10px;
+}
+
+@media (min-width: 1080px) {
+    
+}
+
+@media (max-width: 1080px) {
+    
 }
 
 
