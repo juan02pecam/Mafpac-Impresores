@@ -108,12 +108,12 @@ p{
     font-size: 10px;
 }
 
-@media(){
-
-}
-
-@media(){
-    
+@media(max-width: 1230px){
+    main{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
 }
 
 /*Footer*/
